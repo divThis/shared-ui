@@ -1,7 +1,7 @@
 /* Bootstrap v2.1.0 FIX FOR CONTENT-REWRITE
  *
  * Shindig/OpenSocial "content-rewrite" feature skips
- * the more exotic CSS3 selector syntax such as [class*="span"]
+ * the more exotic CSS3 selector syntax such as [class*="col-md"]
  *
  * This file is not needed if you exclude the bootstrap CSS (or
  * all files) from content-rewriting by adding the following
