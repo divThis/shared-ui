@@ -35,10 +35,8 @@
 .tm360 .tabbed-container .nav > li a{
 
     font-family: MuseoSans500;
-    height: 14px;
-    max-height: 14px;
     color: #fff;
-    padding: 7px 10px 3px 10px;
+    padding: 4px 10px 2px 10px;
     margin: 0;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
     text-decoration: none;
