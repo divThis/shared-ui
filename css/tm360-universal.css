@@ -262,19 +262,19 @@
     color: #aaa;
 }
 
-.tm360 .control-group > label {
+.tm360 .form-group > label {
     font-weight: bold;
 }
 
-.tm360 .control-group.error > label {
+.tm360 .form-group.error > label {
     color: #4F5158;
 }
 
-.tm360 .control-group.error .checkbox,
-.tm360 .control-group.error .radio,
-.tm360 .control-group.error input,
-.tm360 .control-group.error select,
-.tm360 .control-group.error textarea {
+.tm360 .form-group.error .checkbox,
+.tm360 .form-group.error .radio,
+.tm360 .form-group.error input,
+.tm360 .form-group.error select,
+.tm360 .form-group.error textarea {
     color: #4F5158;
     border-color: #f03848;
     -webkit-box-shadow: 1px 1px 1px 0 rgba(240, 56, 72, 0.25) inset;
@@ -283,11 +283,11 @@
     -webkit-appearance: none;
 }
 
-.tm360 .control-group.error .checkbox:focus,
-.tm360 .control-group.error .radio:focus,
-.tm360 .control-group.error input:focus,
-.tm360 .control-group.error select:focus,
-.tm360 .control-group.error textarea:focus {
+.tm360 .form-group.error .checkbox:focus,
+.tm360 .form-group.error .radio:focus,
+.tm360 .form-group.error input:focus,
+.tm360 .form-group.error select:focus,
+.tm360 .form-group.error textarea:focus {
     border-color: #f03848;
     -webkit-box-shadow: 1px 1px 1px rgba(240, 56, 72, 0.25) inset;
     -moz-box-shadow: 1px 1px 1px rgba(240, 56, 72, 0.25) inset;
@@ -320,7 +320,7 @@
     padding-right: 1px;
 }
 
-.tm360 .control-group.error .help-error {
+.tm360 .form-group.error .help-error {
     display: block;
 }
 

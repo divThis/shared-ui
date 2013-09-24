@@ -41,7 +41,7 @@ define(['./util'], function(Util) {
                         $errorIcon = $('<i class="help-error-icon">');
                         $controls = $('<div class="controls">').append($input).append(" ").append($errorIcon).append($errorText);
                         $label = $('<label class="control-label" for="testInput">').html('Test Label');
-                        $controlGroup = $('<div class="control-group">').append($label).append($controls);
+                        $controlGroup = $('<div class="form-group">').append($label).append($controls);
                         $container = $('<div class="tm360"/>').append($controlGroup);
                         $('body').prepend($container);
 
