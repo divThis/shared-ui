@@ -65,7 +65,7 @@
             }
 
             element.popover(opts);
-            $.extend(element.data('popover').options, opts);
+            $.extend(element.data('bs.popover').options, opts);
 
             element.on('shown.tmPopup', function(e) {
                 $(this).addClass('active');
@@ -92,7 +92,7 @@
 
                 $popup.find('.popover-content').append(customTemplate.show());
 
-                if ($target.data('popover').options.title != '') {
+                if ($target.data('bs.popover').options.title != '') {
                     $popup.find('.popover-content').addClass('with-title');
                 } else {
                     $popup.find('.popover-title').remove();
@@ -109,7 +109,7 @@
                 // Fixes a bug where the arrow doesn't paint correctly on ie8
                 $popup.parent().addClass('ie8fix').removeClass('ie8fix');
 
-                if (!$target.data('popover').options.showArrow) {
+                if (!$target.data('bs.popover').options.showArrow) {
                     $popup.find('.arrow').hide();
                 }
                 else {
@@ -122,7 +122,7 @@
                 var $target = $(e.target),
                     $popup = $target.next('.popover');
 
-                $target.data('popover').options.placement = opts.placement;
+                $target.data('bs.popover').options.placement = opts.placement;
 
                 $('body').append(customTemplate.hide());
             });
@@ -177,7 +177,7 @@
 
             setShowArrow: function(value) {
                 this.options.showArrow = value;
-                this.element.data('popover').options.showArrow = value;
+                this.element.data('bs.popover').options.showArrow = value;
             },
 
             getPopup: function() {
@@ -188,25 +188,25 @@
         function testPosition($target) {
             var $popup = $target.next('.popover');
             var offset = getOffset($popup);
-            var placement = $target.data('popover').options.placement;
+            var placement = $target.data('bs.popover').options.placement;
             if (placement == 'bottom' || placement == 'top') {
                 if (offset.top - $target.offsetParent().scrollTop() < 0) {
-                    $target.data('popover').options.placement = 'bottom';
+                    $target.data('bs.popover').options.placement = 'bottom';
                     $popup.removeClass('top').addClass('bottom');
                 }
 
                 if (offset.bottom > $('body').innerHeight() + $target.offsetParent().scrollTop()) {
-                    $target.data('popover').options.placement = 'top';
+                    $target.data('bs.popover').options.placement = 'top';
                     $popup.removeClass('bottom').addClass('top');
                 }
             } else {
                 if (offset.left - $target.offsetParent().scrollLeft() < 0) {
-                    $target.data('popover').options.placement = 'right';
+                    $target.data('bs.popover').options.placement = 'right';
                     $popup.removeClass('left').addClass('right');
                 }
 
                 if (offset.right > $('body').innerWidth() + $target.offsetParent().scrollLeft()) {
-                    $target.data('popover').options.placement = 'left';
+                    $target.data('bs.popover').options.placement = 'left';
                     $popup.removeClass('right').addClass('left');
                 }
             }
@@ -222,7 +222,7 @@
             var targetOffset = getOffset($target);
             var placementOffset = 1 + (opts.showArrow ? $arrow.outerHeight() : 1);
 
-            switch ($target.data('popover').options.placement) {
+            switch ($target.data('bs.popover').options.placement) {
                 case 'top':
                     adjust += targetOffset.top - $popup.outerHeight() - placementOffset;
                     break;
@@ -251,10 +251,10 @@
                 });
             }
 
-            var showArrow = $target.data('popover').options.showArrow;
+            var showArrow = $target.data('bs.popover').options.showArrow;
             var arrowIsMissPlaced = $target.outerWidth() < $arrow.outerWidth() + arrowOffset * 2;
             if (showArrow && opts.secondaryPlacement && arrowIsMissPlaced) {
-                var horzAdjust = ($target.data('popover').options.secondaryPlacement == 'left') ? arrowOffset : arrowOffset * -1;
+                var horzAdjust = ($target.data('bs.popover').options.secondaryPlacement == 'left') ? arrowOffset : arrowOffset * -1;
                 popupOffset = getOffset($popup);
                 $popup.offset({
                     left: popupOffset.left + horzAdjust
@@ -278,7 +278,7 @@
             var targetOffset = getOffset($target);
             var placementOffset = 1 + (opts.showArrow ? $arrow.outerWidth() : 1);
 
-            switch ($target.data('popover').options.placement) {
+            switch ($target.data('bs.popover').options.placement) {
                 case 'left':
                     adjust += targetOffset.left - $popup.outerWidth() - placementOffset;
                     break;
@@ -311,10 +311,10 @@
                 }
             }
 
-            var showArrow = $target.data('popover').options.showArrow;
+            var showArrow = $target.data('bs.popover').options.showArrow;
             var arrowIsMissPlaced = $target.outerHeight() < $arrow.outerHeight() + arrowOffset * 2;
             if (showArrow && opts.secondaryPlacement && arrowIsMissPlaced) {
-                var vertAdjust = ($target.data('popover').options.secondaryPlacement == 'top') ? arrowOffset : arrowOffset * -1;
+                var vertAdjust = ($target.data('bs.popover').options.secondaryPlacement == 'top') ? arrowOffset : arrowOffset * -1;
                 popupOffset = getOffset($popup);
                 $popup.offset({
                     top: popupOffset.top + vertAdjust
