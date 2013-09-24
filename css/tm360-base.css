@@ -60,32 +60,6 @@ body {
 }
 
 
-/* adaptive (2-width) sizing */
-#container {
-    width: 1252px;
-    background-color: #ffffff;
-    color: #4f5158;
-    padding: 0;
-    margin: 0 auto;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    *text-align: left;
-}
-
-.small-screen #container {
-    width: 944px;
-}
-
-/* non-adaptive sizing: https://confluence.tm.tmcs/confluence/display/UE/TM360#TM360-1280Mattefor1024Apps */
-#container.non-adaptive {
-    background-color: #d3d3d7;
-}
-#container.non-adaptive > div {
-    background-color: #ffffff;
-    margin: 0 auto;
-    width: 944px;
-}
-
-
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     body {
         zoom: 81.355932%;
