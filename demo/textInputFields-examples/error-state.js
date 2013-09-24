@@ -7,7 +7,7 @@ define([jquery], function($) {
         html: '\
             <div id="error-text-input-container">\n\
                 <div class="form-group error">\n\
-                    <label class="control-label" for="error-text-input">Label</label>\n\
+                    <label for="error-text-input">Label</label>\n\
                     <div class="controls">\n\
                         <input type="text" id="error-text-input" value="invalid text" />\n\
                         <i class="help-error-icon"></i>\n\
@@ -15,7 +15,7 @@ define([jquery], function($) {
                     </div>\n\
                 </div>\n\
                 <div class="form-group error">\n\
-                    <label class="control-label" for="error-textarea">Label</label>\n\
+                    <label for="error-textarea">Label</label>\n\
                     <div class="controls">\n\
                         <textarea id="error-textarea" value="invalid text" />\n\
                         <i class="help-error-icon"></i>\n\
