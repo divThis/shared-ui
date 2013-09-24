@@ -116,29 +116,22 @@
                         <div class="well">
                             <div class="form-group">
                                 <label for="input1">Input Label</label>
-                                <div class="controls">
-                                    <input type="text" id="input1" />
-                                </div>
+                                <input type="text" id="input1" class="form-control" />
                             </div>
                             <div class="form-group">
                                 <label for="inputDisabled">Disabled Input</label>
-                                <div class="controls">
-                                    <input type="text" id="inputDisabled" value="Disabled" disabled />
-                                </div>
+                                <input type="text" id="inputDisabled" class="form-control" value="Disabled" disabled />
                             </div>
                             <div class="form-group">
                                 <label for="textarea1">Textarea Label</label>
-                                <div class="controls">
-                                    <textarea id="textarea1" rows="3"></textarea>
-                                </div>
+                                <textarea id="textarea1" class="form-control" rows="3"></textarea>
                             </div>
-                            <div class="form-group error">
+                            <div class="form-group has-error">
                                 <label for="input2">Input Error</label>
-                                <div class="controls">
-                                    <input type="text" id="input2" value="invalid text" />
-                                    <i class="help-error-icon"></i>
-                                    <span class="help-error">Error help text</span>
-                                </div>
+                                
+                                <input type="text" id="input2" class="form-control" value="invalid text" />
+                                <i class="icon-error"></i>
+                                <span class="help-block">Error help text</span>
                             </div>
                             <p class="more-link">
                                 <a href="demo/index.html?url=demo%2FtextInputFields-examples%2Fall" target="_blank">See more Text Input Field samples</a>
@@ -156,22 +149,16 @@
                     <form>
                         <div class="well">
                             <div class="form-group">
-                                <div class="controls">
-                                    <button type="button" class="btn btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-primary disabled" disabled>Disabled</button>
-                                </div>
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-primary disabled" disabled>Disabled</button>
                             </div>
                             <div class="form-group">
-                                <div class="controls">
-                                    <button type="button" class="btn">Secondary</button>
-                                    <button type="button" class="btn disabled" disabled>Disabled</button>
-                                </div>
+                                <button type="button" class="btn">Secondary</button>
+                                <button type="button" class="btn disabled" disabled>Disabled</button>
                             </div>
                             <div class="form-group">
-                                <div class="controls">
-                                    <button type="button" class="btn btn-success">Important</button>
-                                    <button type="button" class="btn btn-success disabled" disabled>Disabled</button>
-                                </div>
+                                <button type="button" class="btn btn-success">Important</button>
+                                <button type="button" class="btn btn-success disabled" disabled>Disabled</button>
                             </div>
                             <p class="more-link">
                                 <a href="demo/index.html?url=demo%2Fbuttons-examples%2Fall" target="_blank">See more buttons</a>
@@ -190,44 +177,40 @@
                         <div class="well">
 
                             <div class="form-group">
-                                <div class="controls">
-                                    <label class="checkbox">
-                                        <input type="checkbox" value="" />
-                                        Checkbox
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" value="" checked />
-                                        Checked checkbox
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" value="" disabled />
-                                        Disabled checkbox
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" value="" disabled checked />
-                                        Disabled checked checkbox
-                                    </label>
-                                </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" />
+                                    Checkbox
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" checked />
+                                    Checked checkbox
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" disabled />
+                                    Disabled checkbox
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" disabled checked />
+                                    Disabled checked checkbox
+                                </label>
                             </div>
                             <div class="form-group">
-                                <div class="controls">
-                                    <label class="radio">
-                                        <input type="radio" name="optionsRadios" id="radiobutton" value="option1" />
-                                        Radio
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="optionsRadios" id="selected-radiobutton" value="option2" checked />
-                                        Selected radio
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" id="inactive-radiobutton" disabled />
-                                        Disabled radio
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" id="inactive-selected-radiobutton" disabled checked />
-                                        Disabled selected radio
-                                    </label>
-                                </div>
+                                <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="radiobutton" value="option1" />
+                                    Radio
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="selected-radiobutton" value="option2" checked />
+                                    Selected radio
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" id="inactive-radiobutton" disabled />
+                                    Disabled radio
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" id="inactive-selected-radiobutton" disabled checked />
+                                    Disabled selected radio
+                                </label>
                                 <p class="more-link">
                                     <a href="demo/index.html?url=demo%2Fcheckboxes-and-radiobuttons-examples%2Fall" target="_blank">See more checkboxes and radiobuttons ...</a>
                                 </p>
@@ -245,28 +228,26 @@
                 <div class="col-md-9">
                     <form>
                         <div class="well">
-                            <div class="form-group">
-                                <div class="controls demo-group">
-                                    <div class="btn-group">
-                                        <a id="dropdownMenu1" class="btn dropdown-toggle" data-toggle="dropdown" href="#">Select Action</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#1">Action 1</a></li>
-                                            <li><a href="#2">Action 2</a></li>
-                                            <li><a href="#3">Action 3</a></li>
-                                            <li><a href="#4">Action 4</a></li>
-                                            <li><a href="#5">Action 5</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn-group">
-                                        <a id="dropdownMenu2" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Select Action</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#1">Action 1</a></li>
-                                            <li><a href="#2">Action 2</a></li>
-                                            <li><a href="#3">Action 3</a></li>
-                                            <li><a href="#4">Action 4</a></li>
-                                            <li><a href="#5">Action 5</a></li>
-                                        </ul>
-                                    </div>
+                            <div class="form-group demo-group">
+                                <div class="btn-group">
+                                    <a id="dropdownMenu1" class="btn dropdown-toggle" data-toggle="dropdown" href="#">Select Action</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#1">Action 1</a></li>
+                                        <li><a href="#2">Action 2</a></li>
+                                        <li><a href="#3">Action 3</a></li>
+                                        <li><a href="#4">Action 4</a></li>
+                                        <li><a href="#5">Action 5</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <a id="dropdownMenu2" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Select Action</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#1">Action 1</a></li>
+                                        <li><a href="#2">Action 2</a></li>
+                                        <li><a href="#3">Action 3</a></li>
+                                        <li><a href="#4">Action 4</a></li>
+                                        <li><a href="#5">Action 5</a></li>
+                                    </ul>
                                 </div>
                             </div><!-- form-group -->
 
@@ -286,15 +267,13 @@
                 <div class="col-md-9">
                     <form>
                         <div class="well">
-                            <div class="form-group">
-                                <div class="controls demo-group">
-                                    <div class="btn-group">
-                                        <a id="dropdownList1" class="btn dropdown-toggle" data-toggle="dropdown" href="#">Select</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a data-value="Action1">Item 1</a></li>
-                                            <li><a data-value="Action2">Item 2</a></li>
-                                        </ul>
-                                    </div>
+                            <div class="form-group demo-group">
+                                <div class="btn-group">
+                                    <a id="dropdownList1" class="btn dropdown-toggle" data-toggle="dropdown" href="#">Select</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a data-value="Action1">Item 1</a></li>
+                                        <li><a data-value="Action2">Item 2</a></li>
+                                    </ul>
                                 </div>
                             </div><!-- form-group -->
 

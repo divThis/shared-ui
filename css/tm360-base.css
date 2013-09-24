@@ -59,6 +59,10 @@ body {
     background-repeat: repeat-x;
 }
 
+.container {
+	background-color: #ffffff;
+	color: #4f5158;
+}
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     body {

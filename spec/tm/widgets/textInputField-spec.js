@@ -33,15 +33,14 @@ define(['./util'], function(Util) {
 
                 describe(state, function(){
 
-                    var $container, $controlGroup, $label, $controls, $input, $errorIcon, $errorText;
+                    var $container, $controlGroup, $label, $input, $errorIcon, $errorText;
 
                     beforeEach(function(){
                         $input = $('<input type="text" id="testInput" />');
-                        $errorText = $('<span class="help-error">').html('Error help text');
-                        $errorIcon = $('<i class="help-error-icon">');
-                        $controls = $('<div class="controls">').append($input).append(" ").append($errorIcon).append($errorText);
+                        $errorText = $('<span class="help-block">').html('Error help text');
+                        $errorIcon = $('<i class="icon-error">');
                         $label = $('<label for="testInput">').html('Test Label');
-                        $controlGroup = $('<div class="form-group">').append($label).append($controls);
+                        $controlGroup = $('<div class="form-group">').append($label).append($input).append(" ").append($errorIcon).append($errorText);
                         $container = $('<div class="tm360"/>').append($controlGroup);
                         $('body').prepend($container);
 

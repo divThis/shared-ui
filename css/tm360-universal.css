@@ -168,7 +168,7 @@
     font-weight: normal;
 }
 
-.tm360 .help-error {
+.tm360 .help-block {
     font-size: 11px;
     line-height: 11px;
     font-family: Arial,sans-serif;
@@ -176,12 +176,13 @@
     display: none;
     padding-top: 3px;
 }
-.tm360 .help-error-icon {
+.tm360 .icon-error {
+	float: right;
     display: none;
     width: 16px;
     height: 16px;
     line-height: 16px;
-    margin-left: 1px;
+    margin: -21px 4px 0 0;
     vertical-align: text-top;
     background-image: url(img/grfx-tm360SDK.png);
     background-position: -44px -82px;
@@ -189,8 +190,8 @@
     background-repeat: no-repeat;
 }
 
-.tm360 .error .help-error-icon {
-    display: inline-block;
+.tm360 .has-error .icon-error {
+    display: block;
 }
 
 .tm360 input {
@@ -266,15 +267,20 @@
     font-weight: bold;
 }
 
-.tm360 .form-group.error > label {
+.tm360 .form-group > label.checkbox,
+.tm360 .form-group > label.radio {
+    font-weight: normal;
+}
+
+.tm360 .form-group.has-error > label {
     color: #4F5158;
 }
 
-.tm360 .form-group.error .checkbox,
-.tm360 .form-group.error .radio,
-.tm360 .form-group.error input,
-.tm360 .form-group.error select,
-.tm360 .form-group.error textarea {
+.tm360 .form-group.has-error .checkbox,
+.tm360 .form-group.has-error .radio,
+.tm360 .form-group.has-error input,
+.tm360 .form-group.has-error select,
+.tm360 .form-group.has-error textarea {
     color: #4F5158;
     border-color: #f03848;
     -webkit-box-shadow: 1px 1px 1px 0 rgba(240, 56, 72, 0.25) inset;
@@ -283,16 +289,20 @@
     -webkit-appearance: none;
 }
 
-.tm360 .form-group.error .checkbox:focus,
-.tm360 .form-group.error .radio:focus,
-.tm360 .form-group.error input:focus,
-.tm360 .form-group.error select:focus,
-.tm360 .form-group.error textarea:focus {
+.tm360 .form-group.has-error .checkbox:focus,
+.tm360 .form-group.has-error .radio:focus,
+.tm360 .form-group.has-error input:focus,
+.tm360 .form-group.has-error select:focus,
+.tm360 .form-group.has-error textarea:focus {
     border-color: #f03848;
     -webkit-box-shadow: 1px 1px 1px rgba(240, 56, 72, 0.25) inset;
     -moz-box-shadow: 1px 1px 1px rgba(240, 56, 72, 0.25) inset;
     box-shadow: 1px 1px 1px rgba(240, 56, 72, 0.25) inset;
     -webkit-appearance: none;
+}
+
+.tm360 .form-group.has-error .form-control {
+	padding-right: ;
 }
 
 .tm360 .tmCheckbox {
@@ -320,7 +330,7 @@
     padding-right: 1px;
 }
 
-.tm360 .form-group.error .help-error {
+.tm360 .form-group.has-error .help-block {
     display: block;
 }
 
@@ -561,11 +571,11 @@
     margin: 0;
 }
 
-.tm360 .modal .error-message {
+.tm360 .modal .has-error-message {
     line-height: 24px;
 }
 
-.tm360 .modal .error-message:before {
+.tm360 .modal .has-error-message:before {
     content: "";
     width: 24px;
     height: 24px;
@@ -667,43 +677,4 @@
 
 .tm360 .darker input[type="text"].search-query:focus {
     border: 1px solid #4f5158;
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    .tm360 .help-error-icon {
-        width: 18px;
-        height: 18px;
-        line-height: 18px;
-        margin-top: 2px;
-    }
-}
-.lessSep1 {
-    zoom: 1;
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    .tm360 .help-error-icon {
-        width: 18px;
-        height: 18px;
-        line-height: 18px;
-        margin-top: 2px;
-    }
-}
-.lessSep2 {
-    zoom: 1;
-}
-
-@media (min-resolution: 120dpi), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) { 
-    .tm360 .help-error-icon,
-    .tm360 .search-clear-icon,
-    .tm360 .modal .error-message:before {
-        background-image: url(img/grfx-tm360SDK@2x.png);
-    }
-
-    .tm360 .tmCheckbox,
-    .tm360 .tmRadiobutton{
-        margin-bottom: -4px;
-        background: url(img/grfx-tm360SDK@2x.png) no-repeat;
-        background-size: 350px 196px;
-    }
 }

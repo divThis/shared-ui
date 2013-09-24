@@ -6,21 +6,17 @@ define([jquery], function($) {
         description: 'Adding the "error" class to the form-group wrapper displays the error styles, icon, and error/help message.',
         html: '\
             <div id="error-text-input-container">\n\
-                <div class="form-group error">\n\
+                <div class="form-group has-error">\n\
                     <label for="error-text-input">Label</label>\n\
-                    <div class="controls">\n\
-                        <input type="text" id="error-text-input" value="invalid text" />\n\
-                        <i class="help-error-icon"></i>\n\
-                        <span class="help-error">Error help text</span>\n\
-                    </div>\n\
+                    <input type="text" id="error-text-input" class="form-control" value="invalid text" />\n\
+                    <i class="icon-error"></i>\n\
+                    <span class="help-block">Error help text</span>\n\
                 </div>\n\
                 <div class="form-group error">\n\
                     <label for="error-textarea">Label</label>\n\
-                    <div class="controls">\n\
-                        <textarea id="error-textarea" value="invalid text" />\n\
-                        <i class="help-error-icon"></i>\n\
-                        <span class="help-error">Error help text</span>\n\
-                    </div>\n\
+                    <textarea id="error-textarea" class="form-control" value="invalid text" />\n\
+                    <i class="icon-error"></i>\n\
+                    <span class="help-block">Error help text</span>\n\
                 </div>\n\
                 <p>\n\
                     <a href="javascript:;" id="error-toggle">Remove error CSS class</a>\n\
