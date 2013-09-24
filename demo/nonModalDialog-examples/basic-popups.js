@@ -5,8 +5,8 @@ define(['jquery', 'widget!tm/widgets/popup', 'widget!tm/widgets/checkbox'], func
         legend: 'Popups',
         description: 'This example demonstrates the positioning of popups. The popup should always be fully visible within the boundaries of the browser window, changing orientation automatically if needed.',
         html:'\
-            <div id="basic-popups-container" class="demo-container row-fluid">\n\
-                <p class="span6">\n\
+            <div id="basic-popups-container" class="demo-container row">\n\
+                <p class="col-md-6">\n\
                     <button type="button" class="btn" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
@@ -28,7 +28,7 @@ define(['jquery', 'widget!tm/widgets/popup', 'widget!tm/widgets/checkbox'], func
                         data-placement="right-bottom">Right bottom\n\
                     </button>\n\
                 </p>\n\
-                <p class="span6">\n\
+                <p class="col-md-6">\n\
                     <button type="button" class="btn" \n\
                         title="Popup\'s title" \n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
