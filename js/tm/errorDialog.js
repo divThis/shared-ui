@@ -32,7 +32,6 @@
          *  @param {Object} opts creation options
          */
         var tmErrorDialog = function(content, title) {
-          console.log(dialog);
             //dialog.tmModalDialog('setContent', content);
             dialog.find('.modal-body').empty().append(errorRenderer(content));
             dialog.find('.modal-header .modal-title').text(title);
