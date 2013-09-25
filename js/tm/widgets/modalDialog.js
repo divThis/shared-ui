@@ -90,20 +90,30 @@
             var self = this;
             opts = $.extend({}, defaults, opts);
 
-            this.element = element.addClass('modal hide').addClass(opts.fade ? 'fade' : '').attr("tabindex", "-1");
-            this.header = element.children('.modal-header');
-            this.body = element.children('.modal-body');
-            this.footer = element.children('.modal-footer');
+            this.element = element.addClass('modal').addClass(opts.fade ? 'fade' : '').attr("tabindex", "-1");
+            this.dialog = element.find('.modal-dialog');
+            this.content = element.find('.modal-content');
+            this.header = element.find('.modal-header');
+            this.body = element.find('.modal-body');
+            this.footer = element.find('.modal-footer');
             this.renderer = opts.renderer;
 
-            if (!this.header.length) {
-                var title = $('<h3/>').text(opts.title);
+            if (!this.dialog.length) {
+                this.dialog = $('<div class="modal-dialog" />').prependTo(element);
+            }
 
-                this.header = $('<div class="modal-header"></div>').append(title).prependTo(element);
+            if (!this.content.length) {
+                this.content = $('<div class="modal-content" />').prependTo(this.dialog);
+            }
+
+            if (!this.header.length) {
+                var title = $('<h4 class="modal-title" />').text(opts.title);
+
+                this.header = $('<div class="modal-header" />').append(title).prependTo(this.content);
             }
 
             if (!this.body.length) {
-                this.body = $('<div class="modal-body"></div>').insertAfter(this.header);
+                this.body = $('<div class="modal-body" />').insertAfter(this.header);
             }
 
             if (!this.footer.length) {
@@ -118,7 +128,7 @@
                     buttons = buttons.add(createButton(opts.buttons[i], element));
                 }
 
-                this.footer = $('<div class="modal-footer"></div>').append(buttons).insertAfter(this.body);
+                this.footer = $('<div class="modal-footer" />').append(buttons).insertAfter(this.body);
             }
 
             if (opts.content !== null) {
@@ -133,19 +143,19 @@
                 keyboard: false,
                 backdrop: 'static',
                 show: false
-            });
+            }).on('show.bs.modal', function () {
+              self.element.show();
 
-            // Forcing offset to 10 when offset is undefined to fix ie8 rendering
-            this.element.css(
-            {
-                'margin-top': function () {
-                    var baseTop = (typeof window.pageYOffset != 'undefined' ? window.pageYOffset : 10);
-                    return baseTop - (self.element.height() / 2) - 20;
-                },
-                'margin-left': function () {
-                    var baseLeft = (typeof window.pageXOffset != 'undefined' ? window.pageXOffset : 10);
-                    return baseLeft - (self.element.width() / 2) - 20;
-                }
+              // Vertically center modal if dialog height is greater than the modal height
+              if (self.dialog.height() < element.height()) {
+                 self.dialog.css({
+                     position: 'fixed',
+                     top: '50%',
+                     left: '50%',
+                     marginTop: -(self.dialog.height() / 2),
+                     marginLeft: -(self.dialog.width() / 2)
+                 });
+              }
             });
         };
 
@@ -284,7 +294,7 @@
              *  @param {String} value to render
              */
             setTitle: function(value) {
-                this.header.find("h3").text(value);
+                this.header.find(".modal-title").text(value);
             }
         }
 

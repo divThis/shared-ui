@@ -342,7 +342,6 @@
 }
 
 .tm360 .btn,
-.tm360 .modal .btn,
 .tm360.touch .btn:hover,
 .tm360.touch .btn:active {
     font-family: MuseoSans500,sans-serif;
@@ -354,7 +353,6 @@
 }
 
 .tm360 .btn.btn-default,
-.tm360 .modal .btn.btn-default,
 .tm360.touch .btn.btn-default:hover,
 .tm360.touch .btn.btn-default:active {
     color: #4F5158;
@@ -378,10 +376,6 @@
     background-position: 0% 0%;
     background-repeat: repeat-x;
     background-size: auto;
-}
-
-.tm360 .modal .btn {
-    margin-left: 8px;
 }
 
 .tm360 .btn:hover,
@@ -633,9 +627,54 @@
     box-shadow: none;
 }
 
-.tm360 .modal {
-    /*border: 10px solid rgb(153, 153, 153);*/
-    width: 482px;
+.tm360.modal-open {
+	margin-right: 0;
+}
+
+.tm360 .modal.fade {
+    -webkit-transition: opacity 0.10s linear;
+    -moz-transition: opacity 0.10s linear;
+    -o-transition: opacity 0.10s linear;
+    transition: opacity 0.10s linear;
+}
+
+.tm360 .modal.fade.in,
+.tm360 .modal.in {
+    opacity: 1;
+}
+
+.tm360 .modal.fade .modal-dialog {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: none;
+       -moz-transition: none;
+         -o-transition: none;
+            transition: none
+
+}
+
+.tm360 .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+}
+
+.tm360 .modal .modal-dialog {
+	width: 502px;
+	padding: 0;
+}
+
+.tm360 .modal.large .modal-dialog {
+    width: 656px;
+}
+
+.tm360 .modal.custom .modal-dialog {
+    width: auto;
+    height: auto;
+}
+
+.tm360 .modal .modal-content {
     border: 10px solid rgba(0, 0, 0, 0.25);
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding-box;
@@ -648,29 +687,7 @@
     box-shadow: none;
 }
 
-.tm360 .modal.fade {
-    top: 50%;
-    -webkit-transition: opacity 0.10s linear;
-    -moz-transition: opacity 0.10s linear;
-    -o-transition: opacity 0.10s linear;
-    transition: opacity 0.10s linear;
-}
-
-.tm360 .modal.fade.in,
-.tm360 .modal.in {
-    opacity: 1;
-}
-
-.tm360 .modal.large {
-    width: 636px;
-}
-
-.tm360 .modal.custom {
-    width: auto;
-    height: auto;
-}
-
-.tm360 .modal h3 {
+.tm360 .modal .modal-title {
     font-family: 'MuseoSans500';
     font-size: 18px;
     font-weight: normal;
@@ -699,11 +716,11 @@
     margin: 0;
 }
 
-.tm360 .modal .has-error-message {
+.tm360 .modal .error-message {
     line-height: 24px;
 }
 
-.tm360 .modal .has-error-message:before {
+.tm360 .modal .error-message:before {
     content: "";
     width: 24px;
     height: 24px;

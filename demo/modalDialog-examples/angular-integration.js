@@ -7,15 +7,19 @@ define(['jquery', 'angular', 'tm/core', 'widget!tm/widgets/modalDialog'], functi
         html: '\
             <div id="angular-integration" ng-controller="angularIntegrationCtrl">\n\
                 <div tm-modal-dialog="objectToEdit">\n\
-                    <div class="modal-header">\n\
-                        <h3>Angular Integration</h3>\n\
-                    </div>\n\
-                    <div class="modal-body">\n\
-                        Enter your name: <input type="text" ng-model="objectToEdit.name" />\n\
-                    </div>\n\
-                    <div class="modal-footer">\n\
-                        <button type="button" ng-click="cancel()" class="btn btn-default">Cancel</button>\n\
-                        <button type="button" ng-click="save()" class="btn btn-primary">Save</button>\n\
+                    <div class="modal-dialog">\n\
+                        <div class="modal-content">\n\
+                            <div class="modal-header">\n\
+                                <h3>Angular Integration</h3>\n\
+                            </div>\n\
+                            <div class="modal-body">\n\
+                                Enter your name: <input type="text" ng-model="objectToEdit.name" />\n\
+                            </div>\n\
+                            <div class="modal-footer">\n\
+                                <button type="button" ng-click="cancel()" class="btn btn-default">Cancel</button>\n\
+                                <button type="button" ng-click="save()" class="btn btn-primary">Save</button>\n\
+                            </div>\n\
+                        </div>\n\
                     </div>\n\
                 </div>\n\
                 <p><button type="button" class="btn btn-primary" ng-click="edit();">Click me</button> Hello <span ng-bind="object.name"></span>!</p>\n\

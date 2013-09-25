@@ -16,7 +16,7 @@
 
         $(function(){
             // create reused modal for errors
-            var container = $('<div>').addClass('error-dialog hide');
+            var container = $('<div>').addClass('error-dialog');
             container.appendTo('body');
 
             dialog = container.tmModalDialog({
@@ -32,9 +32,10 @@
          *  @param {Object} opts creation options
          */
         var tmErrorDialog = function(content, title) {
+          console.log(dialog);
             //dialog.tmModalDialog('setContent', content);
-            dialog.children('.modal-body').empty().append(errorRenderer(content));
-            dialog.children('.modal-header').find("h3").text(title);
+            dialog.find('.modal-body').empty().append(errorRenderer(content));
+            dialog.find('.modal-header .modal-title').text(title);
             dialog.tmModalDialog('show');
         };
 
