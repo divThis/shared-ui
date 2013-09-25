@@ -357,9 +357,6 @@
 .tm360.touch .btn.btn-default:active {
     color: #4F5158;
     border: 1px solid #9296a3;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
     background-color: #d4d6d9;
     background-image: -ms-linear-gradient(top, #ffffff, #d4d6d9);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#d4d6d9));
