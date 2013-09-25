@@ -346,13 +346,19 @@
 .tm360.touch .btn:hover,
 .tm360.touch .btn:active {
     font-family: MuseoSans500,sans-serif;
-    font-size: 12px;
-    color: #4F5158;
+    font-size: 12px;	
     line-height: 14px;
     padding: 7px 10px 5px 10px;
-    border: 1px solid #9296a3;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
     min-width: 82px;
+}
+
+.tm360 .btn.btn-default,
+.tm360 .modal .btn.btn-default,
+.tm360.touch .btn.btn-default:hover,
+.tm360.touch .btn.btn-default:active {
+    color: #4F5158;
+    border: 1px solid #9296a3;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -380,9 +386,13 @@
 
 .tm360 .btn:hover,
 .tm360 .btn.hover {
+	text-shadow: none;
+}
+
+.tm360 .btn.btn-default:hover,
+.tm360 .btn.btn-default.hover {
     background-color: #ffffff;
     background-image: none;
-    text-shadow: none;
     -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
@@ -436,14 +446,20 @@
 }
 
 .tm360 .btn.btn-success,
-.tm360.touch .btn.btn-success:hover,
-.tm360.touch .btn.btn-success.hover {
+.tm360 .btn.btn-info,
+.tm360 .btn.btn-warning,
+.tm360 .btn.btn-danger {
     color: #FFFFFF;
-    border: 1px solid #4f5158;
     font-size: 14px;
     min-width: 140px;
     height: 34px;
-    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25);
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25);	
+	border: 1px solid #4f5158;
+}
+
+.tm360 .btn.btn-success,
+.tm360.touch .btn.btn-success:hover,
+.tm360.touch .btn.btn-success.hover {
     background-color: #38c56a;
     background-image: -ms-linear-gradient(top, #38c56a, #10a946);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#38c56a), to(#10a946));
@@ -481,12 +497,128 @@
     transition: none 0s ease 0s;
 }
 
+.tm360 .btn.btn-info,
+.tm360.touch .btn.btn-info:hover,
+.tm360.touch .btn.btn-info.hover {
+    background-color: #4cb2d5;
+    background-image: -ms-linear-gradient(top, #4cb2d5, #2b97be);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4cb2d5), to(#2b97be));
+    background-image: -webkit-linear-gradient(top, #4cb2d5, #2b97be);
+    background-image: -o-linear-gradient(top, #4cb2d5, #2b97be);
+    background-image: -moz-linear-gradient(top, #4cb2d5, #2b97be);
+    background-image: linear-gradient(top, #4cb2d5, #2b97be);
+    background-repeat: repeat-x;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#4cb2d5', endColorstr='#2b97be', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+    background-size: auto;
+}
+
+.tm360 .btn.btn-info:hover,
+.tm360 .btn.btn-info.hover,
+.tm360 .btn.btn-info:active,
+.tm360 .btn.btn-info.active {
+    background-color: #2b97be;
+}
+
+.tm360 .btn.btn-info:hover,
+.tm360 .btn.btn-info.hover {
+    background-color: #2b97be;
+    background-position: 0 -15px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -webkit-transition: none 0s ease 0s;
+    -moz-transition: none 0s ease 0s;
+    -ms-transition: none 0s ease 0s;
+    -o-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+}
+
+.tm360 .btn.btn-warning,
+.tm360.touch .btn.btn-warning:hover,
+.tm360.touch .btn.btn-warning.hover {
+    background-color: #ea9d3d;
+    background-image: -ms-linear-gradient(top, #ea9d3d, #c98734);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea9d3d), to(#c98734));
+    background-image: -webkit-linear-gradient(top, #ea9d3d, #c98734);
+    background-image: -o-linear-gradient(top, #ea9d3d, #c98734);
+    background-image: -moz-linear-gradient(top, #ea9d3d, #c98734);
+    background-image: linear-gradient(top, #ea9d3d, #c98734);
+    background-repeat: repeat-x;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ea9d3d', endColorstr='#c98734', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+    background-size: auto;
+}
+
+.tm360 .btn.btn-warning:hover,
+.tm360 .btn.btn-warning.hover,
+.tm360 .btn.btn-warning:active,
+.tm360 .btn.btn-warning.active {
+    background-color: #c98734;
+}
+
+.tm360 .btn.btn-warning:hover,
+.tm360 .btn.btn-warning.hover {
+    background-color: #c98734;
+    background-position: 0 -15px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -webkit-transition: none 0s ease 0s;
+    -moz-transition: none 0s ease 0s;
+    -ms-transition: none 0s ease 0s;
+    -o-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+}
+
+.tm360 .btn.btn-danger,
+.tm360.touch .btn.btn-danger:hover,
+.tm360.touch .btn.btn-danger.hover {
+    background-color: #cd3c3e;
+    background-image: -ms-linear-gradient(top, #cd3c3e, #b13234);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cd3c3e), to(#b13234));
+    background-image: -webkit-linear-gradient(top, #cd3c3e, #b13234);
+    background-image: -o-linear-gradient(top, #cd3c3e, #b13234);
+    background-image: -moz-linear-gradient(top, #cd3c3e, #b13234);
+    background-image: linear-gradient(top, #cd3c3e, #b13234);
+    background-repeat: repeat-x;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#cd3c3e', endColorstr='#b13234', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+    background-size: auto;
+}
+
+.tm360 .btn.btn-danger:hover,
+.tm360 .btn.btn-danger.hover,
+.tm360 .btn.btn-danger:active,
+.tm360 .btn.btn-danger.active {
+    background-color: #b13234;
+}
+
+.tm360 .btn.btn-danger:hover,
+.tm360 .btn.btn-danger.hover {
+    background-color: #b13234;
+    background-position: 0 -15px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -webkit-transition: none 0s ease 0s;
+    -moz-transition: none 0s ease 0s;
+    -ms-transition: none 0s ease 0s;
+    -o-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+}
+
 .tm360 .btn.disabled, 
-.tm360 .btn[disabled],
-.tm360 .btn.btn-primary.disabled, 
-.tm360 .btn.btn-primary[disabled],
-.tm360 .btn.btn-success.disabled, 
-.tm360 .btn.btn-success[disabled]{
+.tm360 .btn[disabled]{
     background: none;
     text-shadow: none;
     border: solid 1px #c8c9ce;
@@ -495,11 +627,7 @@
 }
 
 .tm360 .btn.disabled:hover, 
-.tm360 .btn[disabled]:hover,
-.tm360 .btn.btn-primary.disabled:hover, 
-.tm360 .btn.btn-primary[disabled]:hover,
-.tm360 .btn.btn-success.disabled:hover, 
-.tm360 .btn.btn-success[disabled]:hover{
+.tm360 .btn[disabled]:hover{
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;

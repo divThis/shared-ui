@@ -8,8 +8,8 @@ define(['jquery', 'widget!tm/widgets/tooltip'], function($) {
             <div id="overview-non-modal-container" class="demo-container">\n\
                 <p><a id="javascriptTooltipTarget">Tooltip</a></p>\n\
                 <p>\n\
-                    <button type="button" id="javascriptPopupTarget" class="btn">Pop up</button>\n\
-                    <button type="button" id="javascriptPopupWithNoTitle" class="btn">Pop up with no title</button>\n\
+                    <button type="button" id="javascriptPopupTarget" class="btn btn-default">Pop up</button>\n\
+                    <button type="button" id="javascriptPopupWithNoTitle" class="btn btn-default">Pop up with no title</button>\n\
                 </p>\n\
             </div>',
         js: function() {

@@ -43,7 +43,7 @@ define(['./util', 'injectable!tm/widgets/dropdownMenu'], function(Util, injectab
                 }
 
                 if (renderType[renderTypeIndex] == USING_BUTTON) {
-                    $toggleButton = $('<button type="button" class="btn dropdown-toggle">Select</button>');
+                    $toggleButton = $('<button type="button" class="btn btn-default dropdown-toggle">Select</button>');
                     $toggleMenu = $('<ul class="dropdown-menu"><li><a tabindex="-1" href="#1">Action 1</a></li></ul>');
                     $menuitem = $toggleMenu.find("a");
                     $buttonGroup = $('<div class="btn-group" style="position: absolute;" />').append($toggleButton, $toggleMenu);
@@ -53,7 +53,7 @@ define(['./util', 'injectable!tm/widgets/dropdownMenu'], function(Util, injectab
                 }
 
                 if (renderType[renderTypeIndex] == USING_ELEMENT_AND_ARRAY) {
-                    var $el = $('<button type="button" class="btn dropdown-toggle">Select</button>');
+                    var $el = $('<button type="button" class="btn btn-default dropdown-toggle">Select</button>');
 
                     widget = new DropdownMenu($el, {
                         items: [{

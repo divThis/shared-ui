@@ -11,7 +11,7 @@ define(['jquery', 'angular', 'tm/core', 'widget!tm/widgets/popup'], function($, 
                         <label>Enter name<input type="text" ng-model="objectToEdit.name"></label>\n\
                     </div>\n\
                     <div class="popover-footer">\n\
-                        <button type="button" ng-click="cancel()" class="btn">Cancel</button>\n\
+                        <button type="button" ng-click="cancel()" class="btn btn-default">Cancel</button>\n\
                         <button type="button" ng-click="save()" class="btn btn-primary">Save</button>\n\
                     </div>\n\
                 </div>\n\

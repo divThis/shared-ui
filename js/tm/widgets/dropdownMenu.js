@@ -80,7 +80,7 @@
                 this.btn = $('<button></button>');
             }
 
-            this.btn.addClass('btn dropdown-toggle').attr('data-toggle', "dropdown");
+            this.btn.addClass('btn btn-default dropdown-toggle').attr('data-toggle', "dropdown");
 
             //Render Caret
             this.caret = this.btn.find('.caret');

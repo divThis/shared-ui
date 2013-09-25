@@ -14,7 +14,7 @@ define(['jquery', 'angular', 'tm/core', 'widget!tm/widgets/modalDialog'], functi
                         Enter your name: <input type="text" ng-model="objectToEdit.name" />\n\
                     </div>\n\
                     <div class="modal-footer">\n\
-                        <button type="button" ng-click="cancel()" class="btn">Cancel</button>\n\
+                        <button type="button" ng-click="cancel()" class="btn btn-default">Cancel</button>\n\
                         <button type="button" ng-click="save()" class="btn btn-primary">Save</button>\n\
                     </div>\n\
                 </div>\n\

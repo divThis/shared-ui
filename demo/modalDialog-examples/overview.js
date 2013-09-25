@@ -7,7 +7,7 @@ define(['jquery', 'widget!tm/widgets/modalDialog'], function($) {
         html: '\
             <div id="overview">\n\
                 <div class="modal-footer">\n\
-                    <button type="button" onclick="$(\'#overview\').tmModalDialog(\'hide\')" class="btn">Text</button>\n\
+                    <button type="button" onclick="$(\'#overview\').tmModalDialog(\'hide\')" class="btn btn-default">Text</button>\n\
                     <button type="button" onclick="$(\'#overview\').tmModalDialog(\'hide\')" class="btn btn-primary">Text</button>\n\
                 </div>\n\
             </div>\n\

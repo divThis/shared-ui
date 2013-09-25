@@ -26,7 +26,7 @@ define(['injectable!tm/widgets/popup', 'mock/gadgetPrefMock', 'tm/core', './util
                 
                 beforeEach(function() {
                     var Popup = popupInjectable(jquery[version], gadgets, tm);
-                    $target = $('<button id="target" type="button" title="Popup\s title" class="btn" style="position: fixed; top: 50%; left: 50%; min-width: 30px;" data-trigger="manual" data-template-id="advanced-popup-template">?</button>');
+                    $target = $('<button id="target" type="button" title="Popup\s title" class="btn btn-default" style="position: fixed; top: 50%; left: 50%; min-width: 30px;" data-trigger="manual" data-template-id="advanced-popup-template">?</button>');
                     $template = $('<div id="advanced-popup-template" style="height: 100px; width: 200px;">\n\
                                         <button id="advanced-popup-template-close" type="button" class="btn btn-primary" style="float: right; clear: both;">Close</button>\n\
                                 </div>');
@@ -86,7 +86,7 @@ define(['injectable!tm/widgets/popup', 'mock/gadgetPrefMock', 'tm/core', './util
                     attributes.push('data-content="It\'s so simple to create a popup!"');
                     attributes.push('data-placement="' + position + '"');
                     beforeEach(function() {
-                        $target = $('<button id="target" type="button" class="btn" style="position: fixed; top: 50%; left: 50%; min-width: 30px;" data-trigger="manual" ' + attributes.join(' ') + '>?</button>');
+                        $target = $('<button id="target" type="button" class="btn btn-default" style="position: fixed; top: 50%; left: 50%; min-width: 30px;" data-trigger="manual" ' + attributes.join(' ') + '>?</button>');
                         $container = $('<div class="tm360"></div>').append($target);
                         $('body').append($container);
                         

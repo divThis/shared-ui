@@ -149,16 +149,31 @@
                     <form>
                         <div class="well">
                             <div class="form-group">
+                                <button type="button" class="btn btn-link">Link</button>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-default">Default</button>
+                                <button type="button" class="btn btn-default disabled" disabled>Disabled</button>
+                            </div>
+                            <div class="form-group">
                                 <button type="button" class="btn btn-primary">Primary</button>
                                 <button type="button" class="btn btn-primary disabled" disabled>Disabled</button>
                             </div>
                             <div class="form-group">
-                                <button type="button" class="btn">Secondary</button>
-                                <button type="button" class="btn disabled" disabled>Disabled</button>
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-success disabled" disabled>Disabled</button>
                             </div>
                             <div class="form-group">
-                                <button type="button" class="btn btn-success">Important</button>
-                                <button type="button" class="btn btn-success disabled" disabled>Disabled</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                <button type="button" class="btn btn-info disabled" disabled>Disabled</button>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-warning disabled" disabled>Disabled</button>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-danger disabled" disabled>Disabled</button>
                             </div>
                             <p class="more-link">
                                 <a href="demo/index.html?url=demo%2Fbuttons-examples%2Fall" target="_blank">See more buttons</a>
@@ -230,7 +245,7 @@
                         <div class="well">
                             <div class="form-group demo-group">
                                 <div class="btn-group">
-                                    <a id="dropdownMenu1" class="btn dropdown-toggle" data-toggle="dropdown" href="#">Select Action</a>
+                                    <a id="dropdownMenu1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">Select Action</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#1">Action 1</a></li>
                                         <li><a href="#2">Action 2</a></li>
@@ -269,7 +284,7 @@
                         <div class="well">
                             <div class="form-group demo-group">
                                 <div class="btn-group">
-                                    <a id="dropdownList1" class="btn dropdown-toggle" data-toggle="dropdown" href="#">Select</a>
+                                    <a id="dropdownList1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">Select</a>
                                     <ul class="dropdown-menu">
                                         <li><a data-value="Action1">Item 1</a></li>
                                         <li><a data-value="Action2">Item 2</a></li>
@@ -328,7 +343,7 @@
                     <div class="well">
                         <div class="form-group">
                             <div id="error-container"></div>
-                            <button type="button" id="error-dialog-button" class="btn">Click me</button>
+                            <button type="button" id="error-dialog-button" class="btn btn-default">Click me</button>
                         </div>
                         <p class="more-link">
                             <a href="demo/index.html?url=demo%2FerrorDialog-examples%2Fall" target="_blank">See more error dialogs</a>
@@ -348,10 +363,10 @@
                                 title="It's so simple to create a tooltip!"
                                 data-placement="top">Tooltip</a></p>
                             <p>
-                                <button type="button" class="btn" id="popupTarget"
+                                <button type="button" class="btn btn-default" id="popupTarget"
                                     title="Popup's title" 
                                     data-content="It's so simple to create a popup!">Pop up</button>
-                                <button type="button" class="btn" id="popupWithNoTitle"
+                                <button type="button" class="btn btn-default" id="popupWithNoTitle"
                                     data-content="It's so simple to create a popup!">Pop up with no Title</button>
                             </p>
                         </div>
@@ -370,11 +385,11 @@
                 <div class="col-md-9">
                     <div class="well">
                         <p>Click to generate a sample (non-working) shortlink:  
-                            <button class="shortlink-btn btn">
+                            <button class="shortlink-btn btn btn-default">
                                 <img src="css/img/link-icon.png"/></button>
                         </p>
                         <p>And another, where the popover appears to the right:
-                            <button class="shortlink-btn btn" data-placement="right-bottom">
+                            <button class="shortlink-btn btn btn-default" data-placement="right-bottom">
                                 <img src="css/img/link-icon.png"/></button>
                         </p>
                         <p>See the <a href="https://confluence.tm.tmcs/confluence/display/PJ31/URL+Shortening+in+tm360" target="_blank">URL Shortening in tm360</a> Confluence page for more info.</p>

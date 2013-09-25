@@ -39,7 +39,7 @@
          */
 
         function createButton(buttonDef, element) {
-            var button = $('<button type="button" class="btn"></button>').text(buttonDef.text);
+            var button = $('<button type="button" class="btn btn-default"></button>').text(buttonDef.text);
 
             buttonTypes[buttonDef.type] && button.addClass(buttonTypes[buttonDef.type]);
 

@@ -6,7 +6,7 @@ define(['jquery', 'widget!tm/widgets/tooltip', 'widget!tm/widgets/popup'], funct
         description: 'This example demonstrates how to use the popups with templates.',
         html:'\
             <div id="advanced-popups-container" class="demo-container">\n\
-                <button id="advanced-popups-target" type="button" class="btn target" \n\
+                <button id="advanced-popups-target" type="button" class="btn btn-default target" \n\
                     title="Templated popup"\n\
                     data-custom-template-id="advanced-popup-template">Click me</button>\n\
                 Hello <span id="yourName" />!\n\

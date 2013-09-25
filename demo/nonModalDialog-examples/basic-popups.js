@@ -7,44 +7,44 @@ define(['jquery', 'widget!tm/widgets/popup', 'widget!tm/widgets/checkbox'], func
         html:'\
             <div id="basic-popups-container" class="demo-container row">\n\
                 <p class="col-md-6">\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="top-right">Top right\n\
                     </button>\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="bottom-right">Bottom right\n\
                     </button>\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="right-top">Right top\n\
                     </button>\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="right-bottom">Right bottom\n\
                     </button>\n\
                 </p>\n\
                 <p class="col-md-6">\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title" \n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="top-left">Top left\n\
                     </button>\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="bottom-left">Bottom left\n\
                     </button>\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="left-top">Left top\n\
                     </button>\n\
-                    <button type="button" class="btn" \n\
+                    <button type="button" class="btn btn-default" \n\
                         title="Popup\'s title"\n\
                         data-content="It\'s so simple to create a popup for my website!"\n\
                         data-placement="left-bottom">Left bottom\n\
